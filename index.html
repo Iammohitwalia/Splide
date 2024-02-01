@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+<style>
+  body {
+  background-color: #222;
+  color: #eaeaea;
+  font-family: sans-serif;
+}
+img {
+  max-width: 100%;
+}
+</style>
+<div class="splide">
+  <div class="splide__track" id="splide-track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="https://plchldr.co/i/1280x900?bg=ff4136" alt="plchldr.co ff4136">
+      </li>
+      <li class="splide__slide">
+        <img src="https://plchldr.co/i/1280x900?bg=fff400" alt="plchldr.co fff400">
+      </li>
+      <li class="splide__slide">
+        <img src="https://plchldr.co/i/1280x900?bg=000" alt="plchldr.co Black">
+      </li>
+      <li class="splide__slide">
+        <img src="https://plchldr.co/i/1280x900?bg=f34123" alt="plchldr.co f34123">
+      </li>
+      <li class="splide__slide">
+        <img src="https://plchldr.co/i/1280x900?bg=456465" alt="plchldr.co 456465">
+      </li>
+      <li class="splide__slide">
+        <img src="https://plchldr.co/i/1280x900?bg=2ecc40" alt="plchldr.co 2ecc40">
+      </li>
+    </ul> <!-- /.splide__list -->
+  </div> <!-- /.splide__track -->
+</div> <!-- /.splide -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  new Splide('.splide', {
+    type   : 'loop',
+    drag   : 'free',
+    focus  : 'center',
+    perPage: 3,
+    autoScroll: {
+      speed: 1,
+    },
+  }).mount( window.splide.Extensions );
+});
+</script>
